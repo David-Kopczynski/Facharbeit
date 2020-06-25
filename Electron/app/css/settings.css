@@ -1,0 +1,9 @@
+/* ---------- Buttons ---------- */
+#settingsContentButtons {
+    width: 35%;
+}
+
+#settingsToggleDark {
+    height: 2vh;
+    width: 2vh;
+}

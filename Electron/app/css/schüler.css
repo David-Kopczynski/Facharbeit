@@ -1,0 +1,18 @@
+/* ---------- Buttons ---------- */
+#schülerContentButtons {
+    width: 15%;
+}
+
+#schülerContentDay, #schülerContentImport, #schülerContentRemove, #schülerContentMerge {
+    margin: .5vh 0 0 0;
+    background: rgb(50, 50, 50);
+    height: 3.5vh;
+}
+
+#schülerError {
+    display: none;
+}
+
+#schülerError.error {
+    display: block;
+}
