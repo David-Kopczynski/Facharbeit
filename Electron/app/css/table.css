@@ -1,0 +1,55 @@
+/* ---------- Table ---------- */
+/* ---------- Inspired by http://jsfiddle.net/hashem/CrSpu/554/ from https://stackoverflow.com/questions/17067294/html-table-with-100-width-with-vertical-scroll-inside-tbody ---------- */
+.table {
+    margin: 4vh 1vh 4vh 2vh;
+    height: calc(100% - 8vh);
+}
+
+table {
+    border-collapse: collapse;
+    display: block;
+    height: fit-content;
+}
+
+table.header {
+    width: calc(100% - 1.25vh);
+}
+
+table.body {
+    overflow: scroll;
+}
+
+table.body tbody, table.header thead {
+    overflow: visible;
+    display: inline-table;
+}
+
+table.header thead {
+    position: relative;
+}
+
+table.body tbody {
+    height: -webkit-fill-available;
+}
+
+tr, td {
+    height: auto;
+}
+
+p {
+    height: auto;
+}
+
+table.body tbody tr td, table.header thead tr th {
+    border: .2vh solid #717579;
+    padding: 1vh 2vh 1vh 2vh;
+    width: 0 !important;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(45, 45, 45);
+}
+
+table tr:hover {
+    background-color: rgb(60, 60, 60);
+}

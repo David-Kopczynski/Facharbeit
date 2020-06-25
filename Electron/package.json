@@ -1,0 +1,19 @@
+{
+  "name": "Facharbeit_Berufsinformation",
+  "version": "1.0.0",
+  "description": "Implementierung einer technischen Unterstuetzung der Organisation des Berufsinformationstags.",
+  "main": "app/js/main.js",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "electron-packager": "^14.1.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . Berufsinformation --ignore=.gitignore --ignore=icon.ico --overwrite --all --out=../dist --electron-version=7.1.7 --icon=icon.ico"
+  },
+  "author": "David-Kopczynski",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "node-xlsx": "^0.15.0"
+  }
+}

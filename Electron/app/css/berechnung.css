@@ -1,0 +1,40 @@
+/* ---------- Buttons ---------- */
+#berechnungContentButtons {
+    width: 15%;
+}
+
+#berechnungContentExtraButtons {
+    height: calc(100% - 12vh);
+}
+
+#berechnungContentCalculate, #berechnungContentMax, #berechnungContentMin, #berechnungContentRedistribute, #berechnungContentExport, #berechnungContentDoppeltBelegung {
+    margin: .5vh 0 0 0;
+    background: rgb(50, 50, 50);
+    height: 3.5vh;
+}
+
+#berechnungContentDoppeltBelegung {
+    width: 2vh;
+    height: 2vh;
+}
+
+#berechnungRelative {
+    padding-top: 30vh;
+}
+
+#berechnungError {
+    display: none;
+}
+
+#berechnungError.error {
+    display: block;
+}
+
+#berechnungRelative, #berechnungAbsolute {
+    height: auto;
+    overflow: show;
+}
+
+#berechnungRelativePercentage, #berechnungAbsolutePercentage {
+    display: inline-block;
+}

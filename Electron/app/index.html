@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Berufsinformation</title>
+
+    <!--          CSS Data          -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/table.css" />
+
+    <link rel="stylesheet" href="css/berufe.css" />
+    <link rel="stylesheet" href="css/schüler.css" />
+    <link rel="stylesheet" href="css/berechnung.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+
+    <link rel='stylesheet' href='css/lightMode.css' />
+
+    <!--          JS Data          -->
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="js/functions.js"></script>
+
+    <script src="js/runtime.js"></script>
+
+    <script src="js/berufeSchülerContent.js"></script>
+    <script src="js/berechnungContent.js"></script>
+    <script src="js/settingsContent.js"></script>
+
+    <script src="js/excel.js"></script>
+    <script src="js/table.js"></script>
+
+</head>
+
+<body onload=onload()>
+    <header id="titlebar">
+        <div id="drag-region">
+            <div id="window-controls">
+                <div class="button" id="min-button">
+                    <span>&#xE921;</span>
+                </div>
+                <div class="button" id="restore-button">
+                    <span>&#xE923;</span>
+                </div>
+                <div class="button" id="close-button">
+                    <span>&#xE8BB;</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="menu">
+        <button id="berufe" class="active">Berufe</button>
+        <button id="schüler">Schüler</button>
+        <button id="berechnung">Berechnung</button>
+        <button id="settings">Einstellungen</button>
+    </div>
+    <div id="content">
+        <div id="berufeContent" class="menuContent active">
+            <div id="berufeContentButtons">
+                <select id="berufeContentDay"></select>
+                <button id="berufeContentImport">Importieren</button>
+                <button id="berufeContentRemove">Entfernen</button>
+            </div>
+            <div id="berufeContentTable" class="table">
+                <span id="berufeError"></span>
+                <table id="berufeContentTableContainerHeader" class="header">
+                    <thead></thead>
+                </table>
+                <table id="berufeContentTableContainerBody" class="body">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="schülerContent" class="menuContent">
+            <div id="schülerContentButtons">
+                <select id="schülerContentDay"></select>
+                <button id="schülerContentImport">Importieren</button>
+                <button id="schülerContentRemove">Entfernen</button>
+                <button id="schülerContentMerge">Zusammenfassen</button>
+            </div>
+            <div id="schülerContentTable" class="table">
+                <span id="schülerError"></span>
+                <table id="schülerContentTableContainerHeader" class="header">
+                    <thead></thead>
+                </table>
+                <table id="schülerContentTableContainerBody" class="body">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="berechnungContent" class="menuContent">
+            <div id="berechnungContentButtons">
+                <button id="berechnungContentCalculate">Berechnen</button>
+                <input id="berechnungContentMax" placeholder="Max. Schüleranzahl"></input>
+                <input id="berechnungContentMin" placeholder="Min. Schüleranzahl"></input>
+                <div id="berechnungContentExtraButtons" style="display: none;">
+                    <button id="berechnungContentRedistribute">Umverteilen</button>
+                    <button id="berechnungContentExport">Exportieren</button>
+                    <input type="checkbox" id="berechnungContentDoppeltBelegung" name="berechnungContentDoppeltBelegung">
+                    <label for="berechnungContentDoppeltBelegung"> Kurse doppelt belegen</label>
+                    <div id="berechnungRelative">Zeitabweichung:
+                        <span id="berechnungRelativePercentage"></span>
+                    </div>
+                    <div id="berechnungAbsolute">Wunschabweichung:
+                        <span id="berechnungAbsolutePercentage"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="berechnungContentTable" class="table">
+                <span id="berechnungError"></span>
+                <table id="berechnungContentTableContainerHeader" class="header">
+                    <thead></thead>
+                </table>
+                <table id="berechnungContentTableContainerBody" class="body">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="settingsContent" class="menuContent">
+            <div id="settingsContentButtons">
+                <input type="checkbox" id="settingsToggleDark" name="settingsToggleDark">
+                <label for="settingsToggleDark"> Dark-Mode</label>
+            </div>
+        </div>
+</body>
+
+</html>
