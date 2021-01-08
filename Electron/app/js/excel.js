@@ -79,7 +79,7 @@ const excel = {
   },
   trim: (array) => {
     // Trim content
-        while (!array[array.length -1][0] || !array.length) array.pop();
+    while (array.length && !array[array.length - 1][0]) array.pop();
 
     return array;
   },
