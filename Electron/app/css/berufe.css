@@ -1,18 +1,20 @@
 /* ---------- Buttons ---------- */
 #berufeContentButtons {
-    width: 15%;
+  width: 15%;
 }
 
-#berufeContentDay, #berufeContentImport, #berufeContentRemove {
-    margin: .5vh 0 0 0;
-    background: rgb(50, 50, 50);
-    height: 3.5vh;
+#berufeContentDay,
+#berufeContentImport,
+#berufeContentRemove {
+  margin: 0.5vh 0 0 0;
+  background: rgb(50, 50, 50);
+  height: 3.5vh;
 }
 
 #berufeError {
-    display: none;
+  display: none;
 }
 
 #berufeError.error {
-    display: block;
+  display: block;
 }

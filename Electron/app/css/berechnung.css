@@ -1,40 +1,47 @@
 /* ---------- Buttons ---------- */
 #berechnungContentButtons {
-    width: 15%;
+  width: 15%;
 }
 
 #berechnungContentExtraButtons {
-    height: calc(100% - 12vh);
+  height: calc(100% - 12vh);
 }
 
-#berechnungContentCalculate, #berechnungContentMax, #berechnungContentMin, #berechnungContentRedistribute, #berechnungContentExport, #berechnungContentDoppeltBelegung {
-    margin: .5vh 0 0 0;
-    background: rgb(50, 50, 50);
-    height: 3.5vh;
+#berechnungContentCalculate,
+#berechnungContentMax,
+#berechnungContentMin,
+#berechnungContentRedistribute,
+#berechnungContentExport,
+#berechnungContentDoppeltBelegung {
+  margin: 0.5vh 0 0 0;
+  background: rgb(50, 50, 50);
+  height: 3.5vh;
 }
 
 #berechnungContentDoppeltBelegung {
-    width: 2vh;
-    height: 2vh;
+  width: 2vh;
+  height: 2vh;
 }
 
 #berechnungRelative {
-    padding-top: 30vh;
+  padding-top: 30vh;
 }
 
 #berechnungError {
-    display: none;
+  display: none;
 }
 
 #berechnungError.error {
-    display: block;
+  display: block;
 }
 
-#berechnungRelative, #berechnungAbsolute {
-    height: auto;
-    overflow: show;
+#berechnungRelative,
+#berechnungAbsolute {
+  height: auto;
+  overflow: show;
 }
 
-#berechnungRelativePercentage, #berechnungAbsolutePercentage {
-    display: inline-block;
+#berechnungRelativePercentage,
+#berechnungAbsolutePercentage {
+  display: inline-block;
 }
