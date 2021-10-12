@@ -4,7 +4,7 @@
   "description": "Implementierung einer technischen Unterstuetzung der Organisation des Berufsinformationstags.",
   "main": "app/js/main.js",
   "devDependencies": {
-    "electron": "^7.1.7",
+    "electron": "^11.5.0",
     "electron-packager": "^14.1.1"
   },
   "scripts": {
